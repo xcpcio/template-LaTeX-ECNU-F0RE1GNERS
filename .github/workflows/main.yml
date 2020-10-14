@@ -22,6 +22,7 @@ jobs:
       with:
         root_file: main.tex
         latexmk_use_xelatex: true
+        latexmk_shell_escape: true
     
     - name: Move PDF
       run: |
