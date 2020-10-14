@@ -21,8 +21,12 @@ jobs:
       uses: xu-cheng/texlive-action/full@v1
       with:
         run: |
+          ls
+          pwd
           tlmgr install titlesec
-          xelatex -synctex=1 -interaction=nonstopmode main.tex
+          xelatex -synctex=1 -interaction=nonstopmode --shell-escape main.tex
+          xelatex -synctex=1 -interaction=nonstopmode --shell-escape main.tex
+          xelatex -synctex=1 -interaction=nonstopmode --shell-escape main.tex
     
     - name: Move PDF
       run: |
