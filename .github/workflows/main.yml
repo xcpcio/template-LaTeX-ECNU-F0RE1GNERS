@@ -21,7 +21,9 @@ jobs:
       uses: xu-cheng/latex-action@v2
       with:
         root_file: main.tex
-      run:
+    
+    - name: Move PDF
+      run: |
         mkdir build
         cp main.pdf build/template.pdf
 
