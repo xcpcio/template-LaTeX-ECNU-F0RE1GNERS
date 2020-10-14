@@ -24,8 +24,6 @@ jobs:
           tlmgr update --self
           tlmgr install titlesec
           xelatex -synctex=1 -interaction=nonstopmode --shell-escape main.tex
-          xelatex -synctex=1 -interaction=nonstopmode --shell-escape main.tex
-          xelatex -synctex=1 -interaction=nonstopmode --shell-escape main.tex
     
     - name: Move PDF
       run: |
