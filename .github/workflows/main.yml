@@ -20,7 +20,7 @@ jobs:
     - name: Compile LaTeX document 
       uses: xu-cheng/latex-action@v2
       with:
-        root_file: 
+        root_file: |
           cheatsheat.tex
           main.tex
         latexmk_use_xelatex: true
