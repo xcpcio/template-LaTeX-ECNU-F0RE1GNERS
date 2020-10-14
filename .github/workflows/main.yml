@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-
+    
     runs-on: ubuntu-latest
 
     steps:
@@ -17,11 +17,12 @@ jobs:
       with:
         persist-credentials: false
 
-    - name: Compile LaTeX document
-      uses: xu-cheng/latex-action@v2
+    - name: Compile LaTeX document 
+      uses: xu-cheng/texlive-action/full@v1
       with:
-        root_file: main.tex
-        latexmk_use_xelatex: true
+        run: |
+          tlmgr install titlesec
+          xelatex -synctex=1 -interaction=nonstopmode "main".tex
     
     - name: Move PDF
       run: |
