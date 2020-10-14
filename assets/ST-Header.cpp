@@ -13,9 +13,3 @@ void err(T a, A... x) { cout << a << ' '; err(x...); }
 #else
 #define dbg(...)
 #endif
-
-// for CLion
-// set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2 -Ddebug -Wall -DULTMASTER -DKBlack -Dzerol")
-
-// for University of Porto
-// setxkbmap us
