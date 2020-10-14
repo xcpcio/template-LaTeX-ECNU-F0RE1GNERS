@@ -24,6 +24,7 @@ jobs:
           cheatsheat.tex
           main.tex
         latexmk_shell_escape: true
+        latexmk_use_xelatex: true
     
     - name: Move PDF
       run: |
