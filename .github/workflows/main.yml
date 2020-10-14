@@ -20,8 +20,6 @@ jobs:
     - name: Compile LaTeX document 
     - uses: xu-cheng/latex-action@v2
       with:
-        run: 
-        tlmgr install titlesec
         root_file: main.tex
         latexmk_use_xelatex: true
     
