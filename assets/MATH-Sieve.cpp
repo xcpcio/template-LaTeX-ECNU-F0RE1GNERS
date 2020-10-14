@@ -116,7 +116,6 @@ namespace min25 {
         return (go(N, -1) % MOD + MOD + 1) % MOD;
     }
 }
-
 // see cheatsheet for instructions
 namespace dujiao {
     const int M = 5E6;

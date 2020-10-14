@@ -32,7 +32,6 @@ void NTT(LL a[], int n, int f) {
             a[i] = a[i] * ninv % MOD;
     }
 }
-
 // FFT
 // n needs to be power of 2
 typedef double LD;

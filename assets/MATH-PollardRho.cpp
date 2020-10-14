@@ -9,7 +9,6 @@ LL pollard_rho(LL n, LL c) {
         if (d != 1) return d;
     }
 }
-
 LL fac[100], fcnt;
 void get_fac(LL n, LL cc = 19260817) {
     if (n == 4) { fac[fcnt++] = 2; fac[fcnt++] = 2; return; }

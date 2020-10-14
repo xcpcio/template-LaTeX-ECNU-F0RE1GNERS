@@ -10,7 +10,6 @@ bool checkQ(LL a, LL n) {
     }
     return t == n - 1 || d & 1;
 }
-
 bool primeQ(LL n) {
     static vector<LL> t = {2, 325, 9375, 28178, 450775, 9780504, 1795265022};
     if (n <= 1) return false;

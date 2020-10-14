@@ -2,7 +2,6 @@
 const int M = (1E4 + 200) / 64;
 typedef unsigned long long ULL;
 const ULL ONE = 1;
-
 struct Bitset {
     ULL a[M];
     void go(int x) {
