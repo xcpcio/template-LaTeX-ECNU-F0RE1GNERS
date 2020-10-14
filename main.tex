@@ -10,7 +10,7 @@
 \usepackage{graphicx}
 \usepackage{minted}
 \usepackage{titlesec}
-\usepackage{subfiles}
+\usepackage{pdfpages}
 
 \titlespacing\section{0pt}{15pt}{0pt}
 \titlespacing\subsection{0pt}{5pt}{0pt}
@@ -102,8 +102,8 @@ March 2019
 
 \input contents.tex
 
-\subfile{cheatsheat.tex}
-
 \end{multicols}
 \end{landscape}
+
+\includepdf[pages=22]{cheatsheat.pdf}
 \end{document}
